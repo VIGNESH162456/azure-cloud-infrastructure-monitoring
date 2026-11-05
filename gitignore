@@ -1,0 +1,19 @@
+# Terraform
+.terraform/
+*.tfstate
+*.tfstate.*
+*.tfplan
+crash.log
+crash.*.log
+*.tfvars
+!*.tfvars.example
+.terraform.lock.hcl
+
+# Azure credentials
+.azure/
+*.pem
+*.key
+
+# Environment files
+.env
+.env.*
