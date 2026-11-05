@@ -1,29 +1,49 @@
 # Azure Cloud Infrastructure Deployment & Monitoring
 
 ## Project Overview
-This project explores the deployment and monitoring of cloud infrastructure using Microsoft Azure. It focuses on virtual machine provisioning, storage resource management, access control, and infrastructure monitoring.
+
+This project demonstrates Infrastructure as Code (IaC) using
+Terraform to provision and manage cloud resources on Microsoft Azure.
+
+The project focuses on deploying a Linux Virtual Machine,
+configuring cloud storage, managing access, and monitoring
+infrastructure resources.
 
 ## Technologies Used
+
 - Microsoft Azure
+- Terraform
 - Azure Virtual Machines
 - Azure Storage
+- Azure Resource Manager
 - Azure IAM (RBAC)
 - Azure Monitor
+- Log Analytics
 
-## Key Activities
-- Deployed and configured Azure Virtual Machines to understand cloud infrastructure provisioning and resource management.
-- Explored Azure Storage for cloud-based data storage.
-- Configured and explored Role-Based Access Control (RBAC) to understand user permissions and access management.
-- Used Azure Monitor to observe virtual machine performance and resource metrics.
+## Project Architecture
 
-## Key Learnings
-- Cloud infrastructure provisioning
-- Virtual machine management
-- Identity and access management
-- Cloud resource monitoring
-- Basic cloud security concepts
+The Terraform configuration is designed to manage:
 
-## Author
-Vignesh K
+- Azure Resource Group
+- Linux Virtual Machine
+- Virtual Network and Network Security Group
+- Public IP Address
+- Azure Storage Account
+- Log Analytics Workspace
 
-GitHub: https://github.com/VIGNESH162456
+## Repository Structure
+
+```text
+azure-cloud-infrastructure-monitoring/
+│
+├── docs/
+│   └── deployment-checklist.md
+│
+├── terraform/
+│   ├── main.tf
+│   ├── variables.tf
+│   ├── outputs.tf
+│   ├── terraform.tfvars.example
+│   └── README.md
+│
+└── README.md
