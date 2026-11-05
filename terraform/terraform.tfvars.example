@@ -1,0 +1,7 @@
+project_name  = "azure-infra-lab"
+environment   = "learning"
+location      = "Central India"
+vm_size       = "Standard_B1s"
+admin_username = "azureadmin"
+
+ssh_public_key = "PASTE_YOUR_SSH_PUBLIC_KEY_HERE"
